@@ -1,0 +1,42 @@
+<html>
+<body>
+
+<h2>Given an array of integers, calculate the ratios of its elements that are positive,
+   negative, and zero. Print the decimal value of each fraction on a new line
+    with  places after the decimal. , 
+   rotate the array that many steps left and return the result.<br>
+   arr = [-4, 3, -9, 0, 4, 1]<br></h2>
+
+<h3 id="demo1">original array :</h3>
+<h3 id="pos">Postive Numbs :</h3>
+<h3 id="neg">Negative Numbs :</h3>
+<h3 id="zero">Zero Numbs  :</h3>
+<script>
+    let array=[-4,3,-9,0,4,1];
+    let positiveNum = 0;
+    let negativeNum = 0;
+    let zeroNum = 0;
+    
+    for(let i=0 ; i < array.length ; i++){
+    
+      if(array[i] == 0 ){
+        zeroNum += 1;
+      }
+      else if(array[i] > 0){
+        positiveNum += 1;
+        
+      }
+      else if(array[i] < 0){
+        negativeNum +=1;
+      }
+
+    }
+    
+    document.querySelector("#demo1").innerHTML +=array
+    document.querySelector("#pos").innerHTML +=positiveNum
+    document.querySelector("#neg").innerHTML +=negativeNum
+    document.querySelector("#zero").innerHTML +=zeroNum
+</script>
+
+</body>
+</html>
