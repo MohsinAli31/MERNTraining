@@ -5,14 +5,11 @@
 array =[4,7,9,2,1,0,3] <br>
 </h2>
 
-<h3 id="demo1">original array :</h3>
+<h3 id="demo1">Original array :</h3>
 <h3 id="sort">Sorted Array :</h3>
 
 <script>
     let array =[4,7,9,2,1,0,3];
-    let positiveNum = 0;
-    let negativeNum = 0;
-    let zeroNum = 0;
     document.querySelector("#demo1").innerHTML +=array
     for (let i = 0; i < array.length; i++) {
         for (let j = 0; j < array.length; j++) {
@@ -23,7 +20,6 @@ array =[4,7,9,2,1,0,3] <br>
             }
         }
     }
-    console.log("sorted array",array)
     
     document.querySelector("#sort").innerHTML +=array
 
