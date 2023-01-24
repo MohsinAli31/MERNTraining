@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<h2>Bubble Sort (swap 2 elements adjacents and run loop and put largest element at end)<br>
+array =[4,7,9,2,1,0,3] <br>
+</h2>
+
+<h3 id="demo1">original array :</h3>
+<h3 id="sort">Sorted Array :</h3>
+
+<script>
+    let array =[4,7,9,2,1,0,3];
+    let positiveNum = 0;
+    let negativeNum = 0;
+    let zeroNum = 0;
+    document.querySelector("#demo1").innerHTML +=array
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array.length; j++) {
+            if (array[j] > array[j + 1]) {
+                let tmp = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = tmp;
+            }
+        }
+    }
+    console.log("sorted array",array)
+    
+    document.querySelector("#sort").innerHTML +=array
+
+</script>
+
+</body>
+</html>
