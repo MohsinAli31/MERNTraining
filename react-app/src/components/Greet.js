@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-function Greet() {
-  return (
-    <div>Hello Mohsin</div>
-  )
+const Greet=(props)=> {
+  console.log(props)
+  return <div> Hello {props.name} {props.children}</div>;
 }
 
-export default Greet
+export default Greet;
