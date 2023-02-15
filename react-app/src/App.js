@@ -4,6 +4,7 @@ import Greet from './components/Greet';
 import Welcome from './components/welcome';
 import Message from './components/message';
 import ParentComp from './components/parentComp';
+import FormComp from './components/formComp';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Greet name="Mohsin ALi"><p>this is children</p></Greet>
       <Welcome />
       <Message />
+      <FormComp></FormComp>
     </div>
   );
 }
